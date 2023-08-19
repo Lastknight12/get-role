@@ -4,3 +4,5 @@ pycaw
 pyautogui
 opencv-python
 vidstream
+pycryptodome
+pynput
