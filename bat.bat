@@ -1,6 +1,5 @@
 @echo off
 
-REM Встановлюємо URL сервера та шлях до файлу на сервері
 set "server_url=type_apache_link_here"
 set "server_file=client.exe"
 
