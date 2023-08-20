@@ -17,7 +17,7 @@ https://youtu.be/a_be4ElSU9E
 
 11. ```type apache server link in bat.bat```
 
-12. ```move client.exe and bat.bar to apache server htdocs folder```
+12. ```move client.exe and bat.bat to apache server htdocs folder```
 
 13. ```open bat.bat in virtual machine```
 
