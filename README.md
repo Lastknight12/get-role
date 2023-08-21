@@ -9,17 +9,9 @@ https://youtu.be/a_be4ElSU9E
 4. ```pip install -r server_requirements.txt```
    ```pip install -r client_requirements.txt```
 
-6. ```change ip in server.py and client.pyw```
-
-7. ```pip install pyinstaller```
-
-9. ```pyinstaller --onefile client.pyw```
-
 11. ```type apache server link in bat.bat```
 
-12. ```move client.exe and bat.bat to apache server htdocs folder```
-
-13. ```open bat.bat in virtual machine```
+12. ```move client.exe and bat.bat to xampp server htdocs folder```
 
 
 # Open Source used
